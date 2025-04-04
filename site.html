@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>sign in| Sheyoung Sport Taunts</title>
+    <link rel="stylesheet" href="taunt.css">
+    
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementbyId('email').value;
+            const password = document.getElementbyId('password').value;
+
+            if (email === "user" && password === "1234") {
+                localStorage.setItem("loggedin", "true");
+                window.location.href ="dashboard.html"; 
+            } else {
+                alert("wrong email or password!");
+            }
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Sign in to Sheyoung Sport Taunts</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Sign in</button>
+        </form>
+        <p class="footer-text">
+            Don't have an account? <a href="site2.html">Sign up here</a>
+        </p>
+    </div>
+
+</body>
+</html>

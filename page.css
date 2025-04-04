@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("ball.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.content {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.content p {
+    max-width: 600%;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 28px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signin {
+    background-color: #3b82fb;
+}
+
+.btn-signin:hover {
+    background-color: #2563eb;
+}
+
+.btn-signup {
+    background-color: #10b981;
+}
+
+.btn-signup:hover {
+    background-color: #059669;
+}
+
+.btn-dashboard {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #94a3b8;
+}

@@ -1,0 +1,59 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Subscribe| Sheyoung Sport Taunts</title>
+    <link rel="stylesheet" href="page.css">
+<style>
+    body {
+        font-family: Arial,sans-serif;
+        background: #f4f4f4;
+        text-align: center;
+        padding: 50px;
+    }
+    .sub-box {
+        background: white;
+        padding: 20px;
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .sub-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+        background-color: #0aa83f;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+</style>
+
+<script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        alert("You must log in first");
+        window.location.href = "site.html";
+    }
+    function logout() {
+        localStorage.removeItem('loggeIn');
+        localStorage.removeItem('email');
+        window.location.href = "site.html";
+    }
+</script>
+</head>
+<body>
+
+    <div class="sub-box">
+        <h2>Become a premium member</h2>
+        <p>Pay to unlock prmium sports banter, live chat, and exclusive updates!</p>
+
+        <a href="https://paystack.com/pay/lu4x4xawbd" target="_blank" class="sub-btn">
+            Subscribe Now - #500/month
+        </a>
+    </div>
+
+    <button onclick="logout()"></button>
+</body>
+</html>
